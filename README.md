@@ -49,7 +49,13 @@ The two folders contain the classes required for PHPMailer through which the For
 
 The ```index.html``` file contains a form which can input name, email and message.<br>
 
-The data submitted from the ```index.html``` file goes to the ```mail.php``` file in POST method
+The data submitted from the ```index.html``` file goes to the ```mail.php``` file in POST method, this mail.php file gets all the classes from the PHPMailer Library with the ```autoload.php``` file placed in the ```folder phpmail```. You can see it's directory listing from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/tree/master/phpmail/vendor">here</a>
+<br>
+
+The ```mail.php``` gets all the sending and recieving configuration from the ```constant.php``` file.<br>
+
+When the Form Data is successfully sent by the ```mail.php``` It redirects the user to the ```thank-you.html``` page.<br>
+If there was any error sending the form data, the user will be redirected to the ```error.html``` page.
 
 ### Step 5 - Configure the PHP file for sending form data (constant.php)
 
@@ -67,7 +73,7 @@ The form data will be sent from the gmail account you created.<br>
 
 After that enter the password of the account you created in the place of ```password-of-the-sender```.<br>
 
-The password is required because the PHPMailer logs in to the account *and then* sends the form data to the reciepient mail address.<br>
+The password is required because the PHPMailer logs in to the account **and then** sends the form data to the reciepient mail address.<br>
 
 ```php
 define('PASSWORD',"password-of-sender"); // password of gmail from which mail must be sent
@@ -98,3 +104,11 @@ define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as 
 
 Now all the configuration for the sending and recieving Form Data is Done.
 
+### Personalizing Form
+
+The form in the ```index.html``` file, has three input fields:
+<ol>
+  <li>Name</li>
+  <li>Email</li>
+  <li>Message</li>
+</ol>
