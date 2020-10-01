@@ -1,1 +1,1 @@
-# PHPMailer-Send-Form-Data-To-Email
+# PHPMailer Send Form Data To Email
