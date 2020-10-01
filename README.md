@@ -104,7 +104,7 @@ define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as 
 
 Now all the configuration for the sending and recieving Form Data is Done.
 
-### Personalizing Form
+### Step 7 - Understanding how the form PHP works
 
 The form in the ```index.html``` file, has three input fields:
 <ol>
@@ -116,19 +116,35 @@ The form in the ```index.html``` file, has three input fields:
 Each input has a unique name, the users data is recieved to the mail.php file which accepts and stores the data of the input field when submitted by it's name.<br>
 
 Example:<br>
-HTML form file:<br>
+```index.html``` file:<br>
 
 ```html
+<html>
+  <body>
 <form method="POST" action="mail.php">
-             <div class="header">Name<span class="mandatory">*</span></div>
+             <div class="header">Name*</div>
             <input type="text" placeholder="Enter Name:" name="name" required>
-        <br><br>
-        <div class="header">Email<span class="mandatory">*</span></div><br>
-            <input type="email" placeholder="Enter Your Email:" name="email" required>
-        <br><br>
-        <div class="header">Message<span class="mandatory">*</span></div><br>
-            <textarea placeholder="Enter Message:" name="msg" required></textarea>
-            <br><br>
         <button type="submit">Submit</button>
-    </form>
+</form>
+</body>
+<html>
 ```
+<br>
+
+When the submit button is clicked, the input field is submitted to the ```mail.php``` file.<br>
+Code of ```mail.php``` file:
+<br>
+
+```php
+<?php
+$user_name = filter_var($_POST["name"], FILTER_SANITIZE_EMAIL);
+?>
+```
+<br>
+
+```$_POST["name"]``` is used to get the inputted data and store it in the variable ```user_name```<br>
+
+```$_POST``` is used to get the form data since the method of the form is ```POST```, if ```GET``` method is used, ```$_GET``` is used to get the data.<br>
+
+The ```filter_var($_POST["name"], FILTER_SANITIZE_EMAIL);``` is used to remove any illegal characters when the form is submitted.<br>
+
