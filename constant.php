@@ -7,6 +7,6 @@ define('PASSWORD',"password-of-sender"); // password of gmail from which mail mu
 
 // Recipient Configuration
 define('RECIPIENT_MAIL',"recieving.mail.address@gmail.com"); // email address to where the email must be recieved
-define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as website, not compulsary
+define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as website, not mandatory
 
 ?>
