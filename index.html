@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&display=swap" rel="stylesheet"> <!-- Google fonts -->
+    <style>
+        .header {
+            padding-bottom: 5px;
+            font-family: 'Roboto Mono', monospace;
+        }
+        .mandatory {
+            color: #de4437!important;
+        }  
+        body{ 
+            text-align: center;
+            background-color: beige;
+        } 
+        input{
+            height: 17px;
+            width: 200px;
+        }
+        button{
+            background-color: rgb(236, 236, 0);
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 11px 75px;
+            cursor: pointer;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+        }
+        button:hover{
+            background-color: rgb(78, 247, 0) !important;
+        }
+        textarea {
+            height: 105px;
+            width: 225px;
+        }
+        textarea::-webkit-input-placeholder{
+            text-align: center;
+        }
+        textarea:-ms-input-placeholder{
+            text-align: center;
+        }
+        textarea::placeholder{
+            text-align: center;
+        } 
+        ::-webkit-input-placeholder {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        :-ms-input-placeholder {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        ::placeholder {
+            font-family: 'Roboto Slab', serif;
+        }
+        .wrap {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <h1>Contact Form</h1>
+    <form method="POST" action="mail.php">
+             <div class="header">Name<span class="mandatory">*</span></div>
+            <input type="text" placeholder="Enter Name:" name="name" required>
+        <br><br>
+        <div class="header">Email<span class="mandatory">*</span></div><br>
+            <input type="email" placeholder="Enter Your Email:" name="email" required>
+        <br><br>
+        <div class="header">Message<span class="mandatory">*</span></div><br>
+            <textarea placeholder="Enter Message:" name="msg" required></textarea>
+            <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
