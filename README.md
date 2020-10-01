@@ -201,14 +201,14 @@ if (!$mail->send()) {
 ```
 <br>
 
-You can change it to your own thank-you page, if you want with the ```header``` function:<br>
+You can change it to a different own thank-you page, with the ```header``` function:<br>
 
 ```php
 header("Location: thank-you.html");            
 ```
 <br>
 
-## Step 10 - Learn what happens when there is an error sending Form
+## Step 10 - Learn what happens if there is an error sending Form
 
 If there was an error sending the form, the ```mail.php``` file will redirect the user to the ```error.html``` file.<br>
 
@@ -220,4 +220,16 @@ if (!$mail->send()) {
              exit;
         }           
 ```
+<br>
 
+You can change it to a different error page, with the ```header``` function:<br>
+
+```php
+header("Location: error.html");            
+```
+<br>
+
+## Step 11 - Host the PHPMailer Form
+
+Now, all the configuration are done, you can host it in your Website or Server.<br>
+<span style="color: red">NOTE: </span>
