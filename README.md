@@ -112,3 +112,23 @@ The form in the ```index.html``` file, has three input fields:
   <li>Email</li>
   <li>Message</li>
 </ol>
+
+Each input has a unique name, the users data is recieved to the mail.php file which accepts and stores the data of the input field when submitted by it's name.<br>
+
+Example:<br>
+HTML form file:<br>
+
+```html
+<form method="POST" action="mail.php">
+             <div class="header">Name<span class="mandatory">*</span></div>
+            <input type="text" placeholder="Enter Name:" name="name" required>
+        <br><br>
+        <div class="header">Email<span class="mandatory">*</span></div><br>
+            <input type="email" placeholder="Enter Your Email:" name="email" required>
+        <br><br>
+        <div class="header">Message<span class="mandatory">*</span></div><br>
+            <textarea placeholder="Enter Message:" name="msg" required></textarea>
+            <br><br>
+        <button type="submit">Submit</button>
+    </form>
+```
