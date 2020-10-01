@@ -264,7 +264,6 @@ When someone fills up your form and submits it, the Form Data will be sent to th
 ## Errors
 
 If You encounter any error while using this repository or have any doubts, you can contact me at <a href="mailto:contact.braxtonelmer@gmail.com">contact.braxtonelmer@gmail.com</a> or from <a href="http://braxtonelmer.com/contact/">my website</a> with the detailed info of what you did and what kind of error/doubt you have :)<br>
-<hr>
 
 ## Support
 
