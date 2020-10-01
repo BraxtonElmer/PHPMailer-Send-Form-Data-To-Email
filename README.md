@@ -19,7 +19,7 @@ After that scroll down and turn on "Less secure app access" as depicted in the p
 We are doing this because the PHPMailer logs in to this gmail account, enters the form data and sends it to the reciepient mail address.<br>
 Since this is done automatically and not manual, Google might block it from accessing the account, so Less secure app access must be turned on.<br>
 But do not worry, as this mail address will not be visible to anyone who is sending the form.<br>
-### Step 3 - Download the Repository
+## Step 3 - Download the Repository
 We are done completely with the creation and configuration of the Google account.<br>
 You can download the repository from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/">this Github page</a>.<br>
 ### Step 4 - Configure the PHP file (constant.php)
