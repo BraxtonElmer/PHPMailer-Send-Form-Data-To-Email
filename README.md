@@ -245,16 +245,14 @@ If you change the directory of the ```constant.php```, change the directory list
 Example, lets say the ```constant.php``` file is placed in a folder named ```mail-config```.<br>
 Here is the Directory Structure:<br>
 
-bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.min.css
-│   ├── bootstrap-theme.css
-│   └── bootstrap-theme.min.css
-├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-└── fonts/
-    ├── glyphicons-halflings-regular.eot
-    ├── glyphicons-halflings-regular.svg
-    ├── glyphicons-halflings-regular.ttf
+Root/<br>
+├── PHPMailer/<br>
+├── phpmail/<br>
+├── mail-config/<br>
+|   └── constant.php
+├── error.html<br>
+├── index.html<br>
+├── mail.php<br>
+└── thank-you.html<br>
+
+Then
