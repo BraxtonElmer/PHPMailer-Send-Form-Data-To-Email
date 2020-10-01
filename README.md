@@ -41,7 +41,9 @@ define('USERNAME',"sender.of.form.data@gmail.com"); // gmail address from which 
 
 <br>
 The form data will be sent from the gmail account you created.<br>
+
 After that enter the password of the account you created in the place of ```password-of-the-sender```.<br>
+
 The password is required because the PHPMailer logs in to the account *and then* sends the form data to the reciepient mail address.<br>
 
 ```php
@@ -49,4 +51,5 @@ define('PASSWORD',"password-of-sender"); // password of gmail from which mail mu
 ```
 
 <br>
+
 You do not have to change the ```HOST``` since we are using gmail and already the ```ssl://smtp.gmail.com``` is filled.<br>
