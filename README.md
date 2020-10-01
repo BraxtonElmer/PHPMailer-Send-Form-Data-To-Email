@@ -232,4 +232,4 @@ header("Location: error.html");
 ## Step 11 - Host the PHPMailer Form
 
 Now, all the configuration are done, you can host it in your Website or Server.<br>
-- ![#f03c15]`NOTE`
+- ![NOTE]`#f03c15`
