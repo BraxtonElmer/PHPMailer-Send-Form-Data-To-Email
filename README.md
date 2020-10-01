@@ -232,4 +232,29 @@ header("Location: error.html");
 ## Step 11 - Host the PHPMailer Form
 
 Now, all the configuration are done, you can host it in your Website or Server.<br>
-- ![NOTE]`#f03c15`
+NOTE: Make sure you have th ```PHPMailer folder``` and the ```phpmail folder``` in the **same directory**.<br>
+The ```constant.php``` is called from the same directory in the ```mail.php```<br>
+
+```php
+require('constant.php');           
+```
+<br>
+
+If you change the directory of the ```constant.php```, change the directory listing of the ```constant.php``` in the ```mail.php``` also.<br>
+
+Example, lets say the ```constant.php``` file is placed in a folder named ```mail-config```.<br>
+Here is the Directory Structure:<br>
+
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
