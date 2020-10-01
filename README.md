@@ -104,7 +104,7 @@ define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as 
 
 Now all the configuration for the sending and recieving Form Data is Done.
 
-### Step 7 - Understanding how the form PHP works
+### Step 7 - Understanding how the form and PHP works
 
 The form in the ```index.html``` file, has three input fields:
 <ol>
@@ -147,4 +147,35 @@ $user_name = filter_var($_POST["name"], FILTER_SANITIZE_EMAIL);
 ```$_POST``` is used to get the form data since the method of the form is ```POST```, if ```GET``` method is used, ```$_GET``` is used to get the data.<br>
 
 The ```filter_var($_POST["name"], FILTER_SANITIZE_EMAIL);``` is used to remove any illegal characters when the form is submitted.<br>
+
+In this ```mail.php``` file, I have added a line of code which gets the user's IP address while submitting the form and mails it.<br>
+
+```php
+<?php
+$ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
+?>
+```
+<br>
+
+The IP address is stored in the variable ```$IP```.
+
+### Step 8 - Personalizing Form
+
+You can add more input fields or remove input fields as per your requirement, but make sure you also add some code to recieve the inputted data and also to mail it.
+<br>
+
+First a name attribute must be added to the input field and then, the add some code in the PHP file to recieve the input data with it's name:
+<br>
+
+```php
+<?php
+$user_data = filter_var($_POST["data"], FILTER_SANITIZE_EMAIL);
+?>
+```
+<br>
+
+After the data is stored in the variable, it must be mailed, so extra code must be put in the ```mail.php``` file.
+```php
+$mail->Body =  "Data: $user_data\n";             
+```
 
