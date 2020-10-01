@@ -142,7 +142,7 @@ $user_name = filter_var($_POST["name"], FILTER_SANITIZE_EMAIL);
 ```
 <br>
 
-```$_POST["name"]``` is used to get the inputted data and store it in the variable ```user_name```<br>
+```$_POST["name"]``` is used to get the inputted data and store it in the variable ```$user_name```<br>
 
 ```$_POST``` is used to get the form data since the method of the form is ```POST```, if ```GET``` method is used, ```$_GET``` is used to get the data.<br>
 
