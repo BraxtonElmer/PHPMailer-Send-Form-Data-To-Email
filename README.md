@@ -245,14 +245,4 @@ If you change the directory of the ```constant.php```, change the directory list
 Example, lets say the ```constant.php``` file is placed in a folder named ```mail-config```.<br>
 Here is the Directory Structure:<br>
 
-Root/<br>
-├── PHPMailer/<br>
-├── phpmail/<br>
-├── mail-config/<br>
-|   └── constant.php<br>
-├── error.html<br>
-├── index.html<br>
-├── mail.php<br>
-└── thank-you.html<br>
-
-Then
+<img src="https://i.imgur.com/CSPkt5l.png" alt="Image could not displayed as it was deleted or not loaded properly">
