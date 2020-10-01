@@ -104,7 +104,7 @@ define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as 
 
 Now all the configuration for the sending and recieving Form Data is Done.
 
-## Step 7 - Understanding how the form and PHP works
+## Step 7 - Understanding how the Form and PHP works
 
 The form in the ```index.html``` file, has three input fields:
 <ol>
@@ -174,7 +174,10 @@ $user_data = filter_var($_POST["data"], FILTER_SANITIZE_EMAIL);
 ```
 <br>
 
-After the data is stored in the variable, it must be mailed, so extra code must be put in the ```mail.php``` file.
+After the data is stored in the variable, it must be mailed, so extra code must be put in the ```mail.php``` file.<br>
+
+For mailing the data, it must be place in the ```$mail->Body```<br>
+
 ```php
 $mail->Body =  "Data: $user_data\n";             
 ```
