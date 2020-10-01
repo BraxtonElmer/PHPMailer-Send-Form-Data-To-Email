@@ -246,3 +246,23 @@ Example, lets say the ```constant.php``` file is placed in a folder named ```mai
 Here is the Directory Structure:<br>
 
 <img src="https://i.imgur.com/CSPkt5l.png" alt="Image could not displayed as it was deleted or not loaded properly">
+<br>
+
+Then change the code in the 8th line of ```mail.php``` to:<br>
+
+```php
+require('mail-config/constant.php');           
+```
+<br>
+
+## All Set!
+
+Now all the steps are done, and the form is ready!<br>
+
+When someone fills up your form and submits it, the Form Data will be sent to the reciepient email address entered in the ```constant.php``` file.<br>
+
+## Errors
+
+If You encounter any error while using this repository or have any doubts, you can contact me at <a href="mailto:contact.braxtonelmer@gmail.com">contact.braxtonelmer@gmail.com</a> or from <a href="http://braxtonelmer.com/contact/">my website</a>
+<hr>
+If this PHPMailer Form Data to Email really helps you, Do consider <a href="http://youtube.com/BraxtonElmer">subscribing to me on youtube</a> as that encourages me to do more stuff
