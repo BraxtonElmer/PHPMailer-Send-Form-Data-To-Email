@@ -9,13 +9,13 @@ In order to send the form data to an email, first an email account must be creat
 
 Here we are going to use Gmail as our sender account.<br>
 
-## Step 1 - Create a Gmail Account
+## Step 1 - Create a Google Account
 
 You can create a Google account from <a href="https://accounts.google.com/signup?hl=en">here</a>.<br>
-Make sure you save or remember the mail address and password as this is required to log and send the Form Date to the recieving mail address (Which is done by PHP).<br>
+Make sure you save or remember the mail address and password, as this is required to log and send the Form Data to the recieving mail address (Which is done by PHP).<br>
 
 
-### Step 2 - Change Security Settings of Google Account
+## Step 2 - Change Security Settings of Google Account
 
 After an account is created successfully, go to the Google account settings of the Account you just created and go to the Security tab in the left side or you can <a href="https://myaccount.google.com/intro/security">click here to go there</a> (Make sure you are in the security settings of the account you just created).<br>
 
@@ -36,13 +36,13 @@ Since this is done automatically and not manual, Google might block it from acce
 
 But do not worry, as this mail address will not be visible to anyone who is sending the form.<br>
 
-### Step 3 - Download the Repository
+## Step 3 - Download the Repository
 
 We are done completely with the creation and configuration of the Google account.<br>
 
 You can download the repository from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/">this Github page</a>.<br>
 
-### Step 4 - Know about the Files in the repository
+## Step 4 - Know about the Files in the repository
 
 This repository Contains 2 folders and 5 files.<br>
 The two folders contain the classes required for PHPMailer through which the Form Data is sent to a reciepient mail address.<br>
@@ -57,7 +57,7 @@ The ```mail.php``` gets all the sending and recieving configuration from the ```
 When the Form Data is successfully sent by the ```mail.php``` It redirects the user to the ```thank-you.html``` page.<br>
 If there was any error sending the form data, the user will be redirected to the ```error.html``` page.
 
-### Step 5 - Configure the PHP file for sending form data (constant.php)
+## Step 5 - Configure the PHP file for sending form data (constant.php)
 
 After downloading the repository, you can now start to configure the PHP to send the form data to your mail address.<br>
 The Reciepient mail address and the Sender configuration info is stored in the <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/blob/master/constant.php">constant.php file</a>, so you can change the info whenever required easily.<br>
@@ -83,7 +83,7 @@ define('PASSWORD',"password-of-sender"); // password of gmail from which mail mu
 
 You do not have to change the ```HOST``` since we are using gmail and already the ```ssl://smtp.gmail.com``` is filled.<br>
 
-### Step 6 - Configure the PHP file for recieving the form data (constant.php)
+## Step 6 - Configure the PHP file for recieving the form data (constant.php)
 
 Now lets configure the php to recieve the mail address.<br>
 Change the ```recieving.mail.address@gmail.com``` to the mail address you want the form data to be recieved.<br>
@@ -104,7 +104,7 @@ define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as 
 
 Now all the configuration for the sending and recieving Form Data is Done.
 
-### Step 7 - Understanding how the form and PHP works
+## Step 7 - Understanding how the form and PHP works
 
 The form in the ```index.html``` file, has three input fields:
 <ol>
@@ -159,7 +159,7 @@ $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
 
 The IP address is stored in the variable ```$IP```.
 
-### Step 8 - Personalizing Form
+## Step 8 - Personalizing Form
 
 You can add more input fields or remove input fields as per your requirement, but make sure you also add some code to recieve the inputted data and also to mail it.
 <br>
