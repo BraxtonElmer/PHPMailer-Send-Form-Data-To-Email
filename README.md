@@ -9,7 +9,7 @@ In order to send the form data to an email, first an email account must be creat
 
 Here we are going to use Gmail as our sender account.<br>
 
-### Step 1 - Create a Gmail Account
+## Step 1 - Create a Gmail Account
 
 You can create a Google account from <a href="https://accounts.google.com/signup?hl=en">here</a>.<br>
 Make sure you save or remember the mail address and password as this is required to log and send the Form Date to the recieving mail address (Which is done by PHP).<br>
