@@ -21,7 +21,7 @@ Since this is done automatically and not manual, Google might block it from acce
 But do not worry, as this mail address will not be visible to anyone who is sending the form.<br>
 ### Step 3 - Download the Repository
 We are done completely with the creation and configuration of the Google account.<br>
-You can download the repository from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/">this Github page</a>.
+You can download the repository from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/">this Github page</a>.<br>
 ### Step 4 - Configure the PHP file (constant.php)
 After downloading the repository, you can now start to configure the PHP to send the form data to your mail address.<br>
 The Reciepient mail address and the Sender configuration info is stored in the <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/blob/master/constant.php">constant.php file</a>, so you can change the info whenever required easily.<br>
