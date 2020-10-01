@@ -181,4 +181,43 @@ For mailing the data, it must be place in the ```$mail->Body```<br>
 ```php
 $mail->Body =  "Data: $user_data\n";             
 ```
+<br>
+
+Make sure the ```mail.php``` and the ```PHPMailer folder``` and ```phpmail folder``` are in the same directory.
+
+## Step 9 - Learn what happens when the Form is submitted successfully
+
+When the Form is submitted successfully, the ```mail.php``` file will redirect the user to the ```thank-you.html```.<br>
+
+```php
+if (!$mail->send()) {
+            //error sending form
+             exit;
+        } else {
+            //form data sent to email successfully, go to thank you page
+            header("Location: thank-you.html");
+	        exit;
+        }     
+```
+<br>
+
+You can change it to your own thank-you page, if you want with the ```header``` function:<br>
+
+```php
+header("Location: thank-you.html");            
+```
+<br>
+
+## Step 10 - Learn what happens when there is an error sending Form
+
+If there was an error sending the form, the ```mail.php``` file will redirect the user to the ```error.html``` file.<br>
+
+
+```php
+if (!$mail->send()) {
+            //error sending form, go to error page
+            header("Location: error.html");
+             exit;
+        }           
+```
 
