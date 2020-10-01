@@ -15,7 +15,6 @@ Make sure 2-Step Verification is Off and also turn off "Use your Phone to sign i
 <hr>
 After that scroll down and turn on "Less secure app access" as depicted in the picture below &#8595;<hr>
 <img src="https://i.imgur.com/EirB1CC.jpg" alt="Image could not be shown because it was either deleted or not loaded properly">
-![Image of Less Secure app access](https://i.imgur.com/EirB1CC.jpg)
 <hr><br>
 We are doing this because the PHPMailer logs in to this gmail account, enters the form data and sends it to the reciepient mail address.<br>
 Since this is done automatically and not manual, Google might block it from accessing the account, so Less secure app access must be turned on.<br>
