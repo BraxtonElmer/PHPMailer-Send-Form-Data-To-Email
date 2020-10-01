@@ -263,6 +263,11 @@ When someone fills up your form and submits it, the Form Data will be sent to th
 
 ## Errors
 
-If You encounter any error while using this repository or have any doubts, you can contact me at <a href="mailto:contact.braxtonelmer@gmail.com">contact.braxtonelmer@gmail.com</a> or from <a href="http://braxtonelmer.com/contact/">my website</a>
+If You encounter any error while using this repository or have any doubts, you can contact me at <a href="mailto:contact.braxtonelmer@gmail.com">contact.braxtonelmer@gmail.com</a> or from <a href="http://braxtonelmer.com/contact/">my website</a> with the detailed info of what you did and what kind of error/doubt you have :)<br>
 <hr>
-If this PHPMailer Form Data to Email really helps you, Do consider <a href="http://youtube.com/BraxtonElmer">subscribing to me on youtube</a> as that encourages me to do more stuff
+
+## Support
+
+If this PHPMailer Form Data to Email really helps you, Do consider <a href="http://youtube.com/BraxtonElmer">subscribing to me on youtube</a> as that encourages me to do more stuff like these!
+
+<p style="text-align= center; font-size= 30px">Braxton Elmer</p>
