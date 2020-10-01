@@ -270,4 +270,4 @@ If You encounter any error while using this repository or have any doubts, you c
 
 If this PHPMailer Form Data to Email really helps you, Do consider <a href="http://youtube.com/BraxtonElmer">subscribing to me on youtube</a> as that encourages me to do more stuff like these!
 
-~ A. Braxton Elmer
+~ Braxton Elmer. A
