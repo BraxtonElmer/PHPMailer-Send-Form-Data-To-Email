@@ -42,7 +42,16 @@ We are done completely with the creation and configuration of the Google account
 
 You can download the repository from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/">this Github page</a>.<br>
 
-### Step 4 - Configure the PHP file for sending form data (constant.php)
+### Step 4 - Know about the Files in the repository
+
+This repository Contains 2 folders and 5 files.<br>
+The two folders contain the classes required for PHPMailer through which the Form Data is sent to a reciepient mail address.<br>
+
+The ```index.html``` file contains a form which can input name, email and message.<br>
+
+The data submitted from the ```index.html``` file goes to the ```mail.php``` file in POST method
+
+### Step 5 - Configure the PHP file for sending form data (constant.php)
 
 After downloading the repository, you can now start to configure the PHP to send the form data to your mail address.<br>
 The Reciepient mail address and the Sender configuration info is stored in the <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/blob/master/constant.php">constant.php file</a>, so you can change the info whenever required easily.<br>
@@ -68,4 +77,24 @@ define('PASSWORD',"password-of-sender"); // password of gmail from which mail mu
 
 You do not have to change the ```HOST``` since we are using gmail and already the ```ssl://smtp.gmail.com``` is filled.<br>
 
-### Step 5 - Configure the PHP file for recieving the form data (constant.php)
+### Step 6 - Configure the PHP file for recieving the form data (constant.php)
+
+Now lets configure the php to recieve the mail address.<br>
+Change the ```recieving.mail.address@gmail.com``` to the mail address you want the form data to be recieved.<br>
+
+```php
+define('RECIPIENT_MAIL',"recieving.mail.address@gmail.com"); // email address to where the email must be recieved
+```
+<br>
+
+All the Form Data will be sent to the email address specified here.<br>
+
+You can also keep a name to the sender, so that you can know the mail is sent from a website, for example you can set the name as ```website```.<br>
+
+```php
+define('RECIPIENT_MAIL_NAME',"name"); // name of the sender, you can name it as website, not mandatory
+```
+<br>
+
+Now all the configuration for the sending and recieving Form Data is Done.
+
