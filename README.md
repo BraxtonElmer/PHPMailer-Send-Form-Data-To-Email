@@ -11,9 +11,9 @@ Make sure you save or remember the mail address and password as this is required
 After an account is created successfully, go to the Google account settings of the Account you just created and go to the Security tab in the left side or you can <a href="https://myaccount.google.com/intro/security">click here to go there</a> (Make sure you are in the security settings of the account you just created).<br>
 Make sure 2-Step Verification is Off and also turn off "Use your Phone to sign in".<br>
 <hr><br>
-<img src="https://i.imgur.com/OaQ3J28.jpg" alt="Image could not be shown because it was either deleted or not loaded properly"><br>
-<hr><br>
-After that scroll down and turn on "Less secure app access".<br><hr>
-<img src="https://i.imgur.com/EirB1CC.jpg" alt="Image could not be shown because it was either deleted or not loaded properly"><br>
+<img src="https://i.imgur.com/OaQ3J28.jpg" alt="Image could not be shown because it was either deleted or not loaded properly">
+<hr>
+After that scroll down and turn on "Less secure app access".<hr>
+<img src="https://i.imgur.com/EirB1CC.jpg" alt="Image could not be shown because it was either deleted or not loaded properly">
 <hr><br>
 after that
