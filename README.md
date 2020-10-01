@@ -249,7 +249,7 @@ Root/<br>
 ├── PHPMailer/<br>
 ├── phpmail/<br>
 ├── mail-config/<br>
-|   └── constant.php
+|   └── constant.php<br>
 ├── error.html<br>
 ├── index.html<br>
 ├── mail.php<br>
