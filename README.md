@@ -5,7 +5,7 @@ This mail sends with the <a href="https://en.wikipedia.org/wiki/PHPMailer">PHPMa
 
 PHPMailer sends the Form Data securely and safely with <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">**SMTP**</a> (Simple Mail Transfer Protocol).<br>
 
-## What is PHPMailer
+## What Is PHPMailer
 
 PHPMailer is a code library to sends emails safely and easily with a PHP code from a Web Server.<br>
 
@@ -13,7 +13,7 @@ PHPMailer uses **SMTP** to send mails from the Server.<br>
 
 PHPMailer safely mails all the data, so no need to worry about security!
 
-## Sending mails containing Form Data using PHPMailer
+## Sending Mails Containing Form Data Using PHPMailer
 
 Before starting to configure the settings and personalizing the form, read this whole file to understand how it works so there would not be any problems with the mailing.<br>
 
