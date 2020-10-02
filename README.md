@@ -3,13 +3,23 @@ Here is the full code for sending a mail with the form data a user inputted in a
 
 This mail sends with the <a href="https://en.wikipedia.org/wiki/PHPMailer">PHPMailer Library</a>.<br>
 
-PHPMailer sends the Form Data securely and safely with <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">**SMTP**</a><br>
+PHPMailer sends the Form Data securely and safely with <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">**SMTP**</a> (Simple Mail Transfer Protocol).<br>
+
+## What is PHPMailer
+
+PHPMailer is a code library to sends emails safely and easily with a PHP code from a Web Server.<br>
+
+PHPMailer uses **SMTP** to send mails from the Server.<br>
+
+PHPMailer safely mails all the data, so no need to worry about security!
+
+## Sending mails containing Form Data using PHPMailer
 
 Before starting to configure the settings and personalizing the form, read this whole file to understand how it works so there would not be any problems with the mailing.<br>
 
-In order to send the form data to an email, first an email account must be created, the mail will be sent from this account to another reciepient.<br>
+In order to send the form data to an email, first an email account must be created (This is beacuse PHPMailer uses SMTP to send mails, so it requires an email account), the mail will be sent from this account to another reciepient.<br>
 
-Here we are going to use Gmail as our sender account.<br>
+Here we are going to use a Gmail account as our sender.<br>
 
 ## Step 1 - Create a Google Account
 
