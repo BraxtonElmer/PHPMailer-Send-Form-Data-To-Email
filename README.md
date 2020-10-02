@@ -14,7 +14,7 @@ Here we are going to use Gmail as our sender account.<br>
 ## Step 1 - Create a Google Account
 
 You can create a Google account from <a href="https://accounts.google.com/signup?hl=en">here</a>.<br>
-Make sure you save or remember the mail address and password, as this is required to log and send the Form Data to the recieving mail address (Which is done by PHP).<br>
+Make sure you save or remember the mail address and password, as this is required for the SMTP mail to send the Form Data to the recieving mail address (Which is done by PHP).<br>
 
 
 ## Step 2 - Change Security Settings of Google Account
