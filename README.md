@@ -3,6 +3,8 @@ Here is the full code for sending a mail with the form data a user inputted in a
 
 This mail sends with the <a href="https://en.wikipedia.org/wiki/PHPMailer">PHPMailer Library</a>.<br>
 
+PHPMailer sends the Form Data securely and safely with **SMTP**<br>
+
 Before starting to configure the settings and personalizing the form, read this whole file to understand how it works so there would not be any problems with the mailing.<br>
 
 In order to send the form data to an email, first an email account must be created, the mail will be sent from this account to another reciepient.<br>
@@ -157,7 +159,33 @@ $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
 ```
 <br>
 
-The IP address is stored in the variable ```$IP```.
+The IP address is stored in the variable ```$IP```.<br>
+
+Then the ```mail.php``` mails the Form Data to  the reciepient via the PHPMailer Library.<br>
+This will be the syntax of mailing from ```mail.php```
+
+```php
+ $mail = new PHPMailer(true);  
+    //   $mail->SMTPDebug = 0;                               
+       $mail->isSMTP();
+       $mail->SMTPAuth = true;    
+       $mail->SMTPSecure = 'ssl';
+       $mail->Port = 465;          
+      $mail -> Host = HOST; //start of data getting called from constant.php
+       $mail->Username = USERNAME;        
+       $mail->Password = PASSWORD; //end of data getting called from constant.php
+       $mail->From = $user_email;  
+       $mail->FromName = $user_name; //sends mail with sender name as the name inputted in the form 
+       $mail->addAddress(RECIPIENT_MAIL,RECIPIENT_MAIL_NAME); //this gets called from constant.php
+       $mail->isHTML(true);
+       $mail->Subject = "A response from website!"; //subject of mail
+       $mail->Body = "Website form response :\n\n<br>".   //mail body starts here
+                     "Name: $user_name \n\n<br>".   
+                     "Email: $user_email \n\n<br>".      
+                     "Message: \n\n <br>".    "$msg\n\n<br>".   
+                     "IP: $ip\n"; //mail body ends here
+```
+<br>
 
 ## Step 8 - Personalizing Form
 
