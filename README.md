@@ -3,7 +3,7 @@ Here is the full code for sending a mail with the form data a user inputted in a
 
 This mail sends with the <a href="https://en.wikipedia.org/wiki/PHPMailer">PHPMailer Library</a>.<br>
 
-PHPMailer sends the Form Data securely and safely with **SMTP**<br>
+PHPMailer sends the Form Data securely and safely with <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">**SMTP**</a><br>
 
 Before starting to configure the settings and personalizing the form, read this whole file to understand how it works so there would not be any problems with the mailing.<br>
 
@@ -162,10 +162,16 @@ $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
 The IP address is stored in the variable ```$IP```.<br>
 
 Then the ```mail.php``` mails the Form Data to  the reciepient via the PHPMailer Library.<br>
-This will be the syntax of mailing from ```mail.php```
+For sending the mail,<br>
+First the PHPMailer must be imported:
 
 ```php
- $mail = new PHPMailer(true);  
+ $mail = new PHPMailer(true); 
+```
+<br>
+
+Next the SMTP settings must be initialized:<br>
+```php
     //   $mail->SMTPDebug = 0;                               
        $mail->isSMTP();
        $mail->SMTPAuth = true;    
@@ -174,10 +180,28 @@ This will be the syntax of mailing from ```mail.php```
       $mail -> Host = HOST; //start of data getting called from constant.php
        $mail->Username = USERNAME;        
        $mail->Password = PASSWORD; //end of data getting called from constant.php
+```
+<br>
+
+Next step is to add the reciepient information:<br>
+
+```php
        $mail->From = $user_email;  
        $mail->FromName = $user_name; //sends mail with sender name as the name inputted in the form 
        $mail->addAddress(RECIPIENT_MAIL,RECIPIENT_MAIL_NAME); //this gets called from constant.php
+```
+<br>
+
+We have to initialize this mail as a HTML mail as we are using HTML in the mail's body:<br>
+```php
        $mail->isHTML(true);
+```      
+<br>
+
+Next the data to be mailer must be initialized (The Subject and the Body of the mail):
+<br>
+
+```php
        $mail->Subject = "A response from website!"; //subject of mail
        $mail->Body = "Website form response :\n\n<br>".   //mail body starts here
                      "Name: $user_name \n\n<br>".   
@@ -185,6 +209,7 @@ This will be the syntax of mailing from ```mail.php```
                      "Message: \n\n <br>".    "$msg\n\n<br>".   
                      "IP: $ip\n"; //mail body ends here
 ```
+
 <br>
 
 ## Step 8 - Personalizing Form
