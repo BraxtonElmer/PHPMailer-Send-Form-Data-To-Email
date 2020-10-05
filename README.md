@@ -59,9 +59,9 @@ You can download the repository from <a href="https://github.com/BraxtonElmer/PH
 This repository Contains 2 folders and 5 files.<br>
 The two folders contain the classes required for PHPMailer through which the Form Data is sent to a reciepient mail address.<br>
 
-The ```index.html``` file contains a form which can input name, email and message.<br>
+The ```form.html``` file contains a form which can input name, email and message.<br>
 
-The data submitted from the ```index.html``` file goes to the ```mail.php``` file in POST method, this mail.php file gets all the classes from the PHPMailer Library with the ```autoload.php``` file placed in the ```folder phpmail```. You can see it's directory listing from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/tree/master/phpmail/vendor">here</a>
+The data submitted from the ```form.html``` file goes to the ```mail.php``` file in POST method, this mail.php file gets all the classes from the PHPMailer Library with the ```autoload.php``` file placed in the ```folder phpmail```. You can see it's directory listing from <a href="https://github.com/BraxtonElmer/PHPMailer-Send-Form-Data-To-Email/tree/master/phpmail/vendor">here</a>
 <br>
 
 The ```mail.php``` gets all the sending and recieving configuration from the ```constant.php``` file.<br>
@@ -118,7 +118,7 @@ Now all the configuration for the sending and recieving Form Data is Done.
 
 ## Step 7 - Understanding how the Form and PHP works
 
-The form in the ```index.html``` file, has three input fields:
+The form in the ```form.html``` file, has three input fields:
 <ol>
   <li>Name</li>
   <li>Email</li>
@@ -128,7 +128,7 @@ The form in the ```index.html``` file, has three input fields:
 Each input has a unique name, the users data is recieved to the mail.php file which accepts and stores the data of the input field when submitted by it's name.<br>
 
 Example:<br>
-```index.html``` file:<br>
+```form.html``` file:<br>
 
 ```html
 <html>
